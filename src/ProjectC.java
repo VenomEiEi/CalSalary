@@ -1,33 +1,38 @@
 import java.util.Scanner;
-public class ProjectB {
+public class ProjectC {
 	String id;
 	String name;
 	Double salary;
 	Double sale;
+	int bonut;
 
-	public ProjectB(String insert, String name , Double salary ,Double sale ) {
+	public ProjectC(String insert, String name , Double salary ,Double sale ) {
 		// TODO Auto-generated constructor stub
 		
 		this.id=insert;
 		this.name=name;
 		this.salary=salary;
 		this.sale=sale;
-		 if(sale<=25000) { 
+		this.bonut=0;
+		
+		
+		if(this.salary < 15000 && this.sale > 100000) {
+			 this.bonut = 3000;
+		}
+		
+		 if(sale<=50000) { 
 			 
 			 this.sale=sale*(0.01);
 			 this.salary =  this.salary + this.sale;
 		        
-		 }else if(sale>=25001 && sale<=50000) {
+		 }else if(sale>=50001 && sale<=100000) {
 
 			 this.sale=sale*(0.02);
 			 this.salary =  this.salary+this.sale;		        
 		 }else {
 			 
 			 this.sale=sale*(0.03);
-			 this.salary =  this.salary+ this.sale;	        
-		 }
-		 if(this.salary <= 18000 && this.salary > 0) {
-			 this.salary = 18000.00;
+			 this.salary =  (this.salary+ this.sale)+this.bonut;	        
 		 }
 		}
 		
