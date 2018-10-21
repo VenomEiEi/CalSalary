@@ -12,12 +12,12 @@ public class ProjectA {
 		this.name=name;
 		this.salary=salary;
 		this.sale=sale;
-		 if(sale<=25000) { 
+		 if(sale<=50000) { 
 			 
 			 this.sale=sale*(0.01);
 			 this.salary =  this.salary + this.sale;
 		        
-		 }else if(sale>=25001 && sale<=50000) {
+		 }else if(sale>=50001 && sale<=100000) {
 
 			 this.sale=sale*(0.02);
 			 this.salary =  this.salary+this.sale;		        
