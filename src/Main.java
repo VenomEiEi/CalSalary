@@ -18,7 +18,7 @@ public class Main {
 			salary = sc.nextDouble();
 			System.out.print("กรุณกรอกยอดขาย : ");
 			sale=sc.nextDouble();
-			ProjectB send= new ProjectB(id,name,salary,sale);
+			ProjectC send= new ProjectC(id,name,salary,sale);
 			send.output();
 
 }
